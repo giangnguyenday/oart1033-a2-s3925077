@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 18px;
+}
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    color:#EBFCFD;
+    font-family: Playfair Display;
+}
+
+h1 {
+    color: #EBF9FA;
+    font-family: Playfair Display;
+    font-weight: 400;
+    mix-blend-mode: color-dodge;
+    font-size: 20vw;
+    position: absolute;
+    font-kerning: auto;
+    top: 40vw;
+    left: 10vw;
+}
+h2 {
+    color: #33E7F2;
+    font-weight: 400;
+    font-size: 2.8vw;
+}
+h4 {
+    font-family: 'Source Sans 3';
+    font-size: 1vw;
+    font-weight: 400;
+}
+.body-text{
+    font-family: 'Source Sans 3';
+    font-size: 1.5vw;
+    position: absolute;
+}
+h3 {
+    color: #EBFCFD;
+    font-family: 'Source Sans 3';
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+    text-align: right;
+}
+
+#bg-one {
+    position: relative;
+    z-index: -50;
+    width: 100vw;
+}
+#bg-two {display :none;}
+#bg-three {display :none;}
+
+li {
+    list-style: none;
+}
+
+
+#phone-gap{display: none;}
+
+footer {
+    opacity: 0.3;
+    width: 100vw;
+    height: 2vw;
+    text-align: center;
+    font-family: 'Source Sans 3';
+    font-size: 1vw;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* Device: Tablet (Ipad Air) */
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    #bg-one {display: none;}
+    #bg-two {
+        display: block;
+        position: relative;
+        z-index: -50;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 23vw;
+        top: 108vw;
+        left: 5vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    h4 {
+        font-size: 1.34vw;
+        font-weight: 400;
+    }
+    .body-text{
+        font-size: 2vw;
+        position: absolute;
+    }
+
+    footer {
+        font-size: 1.3vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Device: Mobile (Iphone 12 Pro) */
+@media screen and (max-width: 768px) {
+    #phone-gap{
+        z-index: 100;
+        background-color: #0E053A;
+        display: block;
+        width: 100vw;
+        height: 10vw;
+        position: fixed;
+    }
+    #bg-one {display: none;}
+    #bg-three {
+        display: block;
+        position: relative;
+        z-index: -50;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 45vw;
+        top: 120vw;
+        left: 6.5vw;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    h4 {
+        font-size: 2.2vw;
+        font-weight: 400;
+    }
+    .body-text {
+        font-size: 2.8vw;
+    }
+    h3 {
+        font-size: 4.5vw;
+
+    }
+
+    footer {
+        font-size: 1.2vw;
+    }
+
+}

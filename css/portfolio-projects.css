@@ -1,0 +1,197 @@
+body {
+    background: linear-gradient(180deg, #020320 26.12%, #32308E 100%);
+}
+.body-text {
+    margin:0;
+}
+
+#hashtags {
+    top: 22vw;
+    left:70vw;
+    font-style: italic;
+}
+
+#page-iconography {
+    height: 320vw;
+}
+#page-interactive-infographic {
+    height: 160vw;
+}
+#page-web-design {
+    height: 222vw;
+}
+#page-photobook {
+    height: 500vw;
+}
+#page-photography {
+    height: 245vw;
+}
+#page-digital-video {
+    height: 205vw;
+}
+
+
+#photography-grid-layout img {
+    width: 100%;
+}
+#photography-grid-layout {
+    margin: 0 10vw 0 10vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.5vw;
+}
+
+
+.hashtags-items:link {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1vw;
+} 
+.hashtags-items:hover {
+    color: #d889f4;
+    text-decoration: none;
+}
+.hashtags-items:active{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1vw;
+} 
+
+#content {
+    position: absolute;
+    top: 45vw;
+    text-align: center;
+}
+.doc {
+    width: 80vw;
+}
+
+iframe {
+    height: 65vw;
+}
+
+#iconography,
+#interactive-infographic,
+#web-design,
+#photobook,
+#photography, 
+#digital-video
+{
+    color:#d889f4;
+    text-decoration: none;
+}
+
+#notes {
+    width: 45vw;
+    position: absolute;
+    top: 22.5vw;
+    left: 10vw;
+}
+
+
+
+
+
+
+
+/* Device: Tablet (Ipad Air) */
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    #hashtags {
+        top:40vw;
+        left:64vw;
+    }
+    .doc {
+        width: 90vw;
+    }
+    #content {
+        position: absolute;
+        top: 90vw;
+    }
+
+    #page-iconography {
+        height: 400vw;
+    }
+    #page-interactive-infographic {
+        height: 210vw;
+    }
+    #page-web-design {
+        height: 275vw;
+    }
+    #page-photobook {
+        height: 605vw;
+    }
+    #page-photography {
+        height: 455vw;
+    }
+    #page-digital-video {
+        height: 260vw;
+    }
+
+    #photography-grid-layout {
+        margin: 0 7.5vw 0 7.5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3vw;
+    }
+
+
+    #notes {
+        top: 40vw;
+        left: 8.5vw;
+    }
+    
+}
+
+
+
+
+
+
+
+
+    /* Device: Mobile (Iphone 12 Pro) */
+@media screen and (max-width: 768px) {
+    #hashtags {
+        top:50vw;
+        left:50vw;
+    }
+    .doc {
+        width: 90vw;
+    }
+    #content {
+        position: absolute;
+        top: 100vw;
+    }
+
+
+    #page-iconography {
+        height: 415vw;
+    }
+    #page-interactive-infographic {
+        height: 220vw;
+    }
+    #page-web-design {
+        height: 290vw;
+    }
+    #page-photobook {
+        height: 620vw;
+    }
+    #page-photography {
+        height: 890vw;
+    }
+    #page-digital-video {
+        height: 270vw;
+    }
+
+
+    #photography-grid-layout {
+        margin: 0 6vw 0 6vw;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.5vw;
+    }
+
+    #notes {
+        width: 43vw;
+        top: 41vw;
+        left: 8.5vw;
+    }
+}

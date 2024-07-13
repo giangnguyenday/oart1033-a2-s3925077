@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    background: #0D062A;
+    font-family: 'Playfair Display', serif;
+    font-kerning: auto;
+}
+img#desktop-home {
+    z-index: -50;
+    width: 100vw;
+    top: 0;
+}
+img#tablet-home {display: none}
+img#mobile-home {display: none}
+
+
+section p.occupation {
+    color: #B6B6B6;
+    position: absolute;
+    font-style: italic;
+    mix-blend-mode: soft-light;
+}
+section p.occupation#one {
+    font-size: 20vw;
+    top: -20vw;
+    left: 10vw;
+}
+section p.occupation#two {
+    font-size: 14vw;
+    top: 8vw;
+    left: 10vw;
+}
+
+
+section p.name {
+    color: #EBFCFD;
+    text-align: right;
+    font-family: Playfair Display;
+    font-size: 6vw;
+    mix-blend-mode: color-dodge;
+    position: absolute;
+}
+section p#name-two {display: none;}
+section p#name-one {
+    top: 45vw;
+    right: 10vw;
+}
+section div.line {
+    background-color: #EBFCFD;
+    width: 5vw;
+    height: 0.5px;
+}
+section ul.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 0.5em;
+
+    position: absolute;
+    top: 58vw;
+    right: 10vw;
+}
+
+
+li {
+    color:#EBFCFD;
+}
+a:link {
+    color:#EBFCFD;
+    text-decoration: none;
+}
+a:visited {
+    color:#EBFCFD;
+    text-decoration: none;
+}
+a:hover {
+    color: #33E7F2;
+}
+
+a {
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+#home {
+    font-weight: 900;
+    font-style: italic;
+}
+
+footer {
+    position: absolute;
+    top: 67.5vw;
+    left: 80vw;
+    color:#EBFCFD;
+    opacity: 0.3;
+
+    height: 1vw;
+    text-align: center;
+    font-family: 'Source Sans 3';
+    font-size: 1vw;
+    font-style: italic;
+
+}
+
+
+
+
+/* Device: Tablet (Ipad Air) */
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    img#desktop-home {display: none;}
+    img#tablet-home {display: block; width: 100vw;}
+    section p.occupation {transform: rotate(270deg);}
+    section p.occupation#one {
+        font-size: 28vw;
+        top: 42vw;
+        left: -25vw;
+    }
+    section p.occupation#two {
+        font-size: 20vw;
+        top: 65vw;
+        left: 10vw;
+    }
+
+    section p#name-one {display: none;}
+    section p#name-two {
+        font-size: 10vw;
+        display: block;
+        top: 5vw;
+        right: 12vw;
+        line-height: 98%;
+    }
+    section ul.navigation {
+        gap: 0.3em;
+        top: 35vw;
+        right: 12vw;
+    }
+    a {
+        font-size: 2vw;
+    }
+
+    section div.line {
+        background-color:#33E7F2;
+        transform: rotate(90deg);
+        height: 2px;
+        width: 3vw;
+    }
+
+    footer {
+        top: 139.5vw;
+        left: 75vw;
+        font-size: 1.3vw;
+    }
+}
+
+
+
+
+
+/* Device: Mobile (Iphone 12 Pro) */
+@media screen and (max-width: 768px) {
+    img#desktop-home {display: none;}
+    img#mobile-home {display:block; width: 100vw;}
+
+    section p.occupation {transform: rotate(270deg);}
+    section p.occupation#one {
+        top: 65vw;
+        left: -40vw;
+        font-size: 40vw;
+    }
+    section p.occupation#two {
+        top: 100vw;
+        left: 11vw;
+        font-size: 28vw;
+    }
+    
+    section p#name-one {display: none;}
+    section p#name-two {
+        font-size: 12vw;
+        display: block;
+        top: 10vw;
+        right: 12vw;
+        line-height: 98%;
+    }
+    section ul.navigation {
+        gap: 0.1em;
+        top: 45vw;
+        right: 12vw;
+    }
+    a {
+        font-size: 3vw;
+    }
+    section div.line {
+        transform: rotate(90deg);
+        height: 1.5px;
+        width: 4.5vw;
+        background-color: #33E7F2;
+    }
+
+
+    footer {
+        top: 210vw;
+        left: 65vw;
+        font-size: 1.8vw;
+    }
+}

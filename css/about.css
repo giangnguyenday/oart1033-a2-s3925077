@@ -1,0 +1,322 @@
+body {
+    background: linear-gradient(180deg, #060606 21.35%, #583072 100%);
+}
+.about {
+    font-style: italic;
+    font-weight: 900;
+}
+
+#heading-br{display: none;}
+
+h3 {
+    top: 15vw;
+    left:15vw;
+}
+
+#p-one {
+    top: 22vw;
+    left:30vw;
+}
+
+#page-two {
+    height: 65vw;
+}
+
+#text-two {
+    width: 100vw;
+    height: 16vw;
+    position: absolute;
+    top: 76vw;
+    
+    display:grid;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#p-two {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+
+#profile-picture {
+    width: 100vw;
+    height: 32vw;
+    position: absolute;
+    top: 100vw;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.picture-items{
+    width: 100%;
+}
+#pic-one {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#pic-two {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#pic-three {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#pic-four {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+#education-heading {
+    position: absolute;
+    top: 120vw;
+    left: 20vw;
+}
+.bold {
+    font-weight: 700;
+}
+#school {
+    width: 40vw;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 2.5vw;
+    position: absolute;
+    top: 126vw;
+    left: 25vw;
+}
+
+
+#page-three {
+    height: 50vw;
+}
+
+#skilltext {
+    width: 25vw;
+    height: 24vw;
+    margin:0;
+    position: absolute;
+    top:150vw;
+    left: 60vw;
+}
+
+span {
+    font-style: italic;
+    transition-duration: 0.3s;
+
+}
+span:hover {
+    color: #EBFCFD;
+}
+span:active {
+    color: #EBFCFD;
+}
+.one {
+    color: #a5f58b;
+}
+.two {
+    color:#d889f4;
+}
+.three {
+    color:#F2A65F;
+}
+
+
+
+
+
+
+/* Device: Tablet (Ipad Air) */
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    h3 {
+        top: 90vw;
+    }
+
+    #p-one {
+        font-size: 1.8vw;
+        top: 101vw;
+        left: 40vw;
+    }
+    
+    #text-two {
+        width: 100vw;
+        height: 16vw;
+        position: absolute;
+        top: 154vw;
+        
+        display:grid;
+        grid-template-columns: 1fr 2fr 6fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #p-two {
+        font-size: 1.8vw;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    #page-two {
+        height: 135vw;
+    }
+    
+    #profile-picture {
+        top: 188vw;
+    }
+    #pic-one {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #pic-two {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    #pic-three {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #pic-four {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    
+    #education-heading {
+        top: 252vw;
+        left: 20vw;
+    }
+    .bold {
+        font-weight: 700;
+    }
+    #school {
+        gap: 2.8vw;
+        position: absolute;
+        top: 260vw;
+        left: 28vw;
+    }
+    
+    #skilltext {
+        width: 28vw;
+        height: 24vw;
+
+        top:280vw;
+        left: 60vw;
+    }
+}
+
+
+
+
+
+
+
+
+    /* Device: Mobile (Iphone 12 Pro) */
+@media screen and (max-width: 768px) {
+    #heading-nobr{display: none;}
+    #heading-br{display: block;}
+    h1 {
+        line-height: 64.3%
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    h4 {
+        font-size: 2.2vw;
+        font-weight: 400;
+    }
+    .body-text{
+        font-size: 10vw;
+        position: absolute;
+    }
+    h3 {
+        font-size: 4.5vw;
+        top: 90vw;
+    }
+
+    #p-one {
+        font-size: 2.8vw;
+        top: 107vw;
+        left: 48vw;
+    }
+    
+    #text-two {
+        width: 100vw;
+        height: 16vw;
+        position: absolute;
+        top: 245vw;
+        
+        display:grid;
+        grid-template-columns: 1fr 2fr 6fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #p-two {
+        font-size: 2.8vw;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    
+    #page-two {
+        height: 190vw;
+    }
+    
+    #profile-picture {
+        top: 300vw;
+    }
+    #pic-one {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #pic-two {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    #pic-three {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #pic-four {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+    
+    
+    #education-heading {
+        top: 370vw;
+        left: 20vw;
+    }
+    .bold {
+        font-weight: 700;
+    }
+    #school {
+        gap: 4vw;
+        position: absolute;
+        top: 385vw;
+        left: 30vw;
+    }
+
+    #page-three {
+        height: 60vw;
+    }
+
+    #skilltext {
+        width: 68vw;
+        height: 24vw;
+
+        top:420vw;
+        left: 18vw;
+    }
+}

@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(180deg, #020320 26.12%, #32308E 100%);
+}
+.contact {
+    font-style: italic;
+    font-weight: 900;
+}
+
+#big-text {
+    color: #EBF9FA;
+    font-size: 15vw;
+    line-height: 88%;
+    font-kerning: auto;
+    mix-blend-mode: soft-light;
+
+    position: absolute;
+    top: 0vw;
+    left: 10vw;
+}
+
+#details {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 5vw;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap:0;
+
+    position:absolute;
+    top: 50vw;
+    right: 3vw;
+}
+
+#one {
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#three {
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#four {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer {
+    position: absolute;
+    top: 67vw;
+}
+
+
+
+
+/* Device: Tablet (Ipad Air) */
+@media screen and (min-width:767px) and (max-width: 1024px) {
+    #big-text {
+        font-size: 20vw;
+        transform: rotate(270deg);
+        top: 52vw;
+        left: 6vw;
+    }
+    #details {
+
+        width: 35vw;
+        height: 6vw;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        gap:0;
+    
+        position:absolute;
+        top: 30vw;
+        right: 28vw;
+    }
+    footer {
+        top: 139.5vw;
+    }
+}
+
+
+
+
+
+
+/* Device: Mobile (Iphone 12 Pro) */
+@media screen and (max-width: 768px) {
+    #big-text {
+        margin:0;
+        width: 200vw;
+
+        font-size: 30vw;
+        transform: rotate(270deg);
+        top: 76vw;
+       left:-52vw;
+    } 
+    #details {
+        width: 40vw;
+        height: 12vw;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap:6vw;
+    
+        position:absolute;
+        top: 50vw;
+        right: 29vw;
+    }
+
+    body-text{
+        margin:0;
+    }
+
+    footer {
+        top: 209vw;
+    }
+}
